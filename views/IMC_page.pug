@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= "Calculer votre IMC ici"
+  form(action="/" method="post") 
+    p Entrez votre poids en kg (ex: 80.5): 
+    input(type="double", name="poids")
+    p Entrez votre grandeur en m (ex: 1.85): 
+    input(type="double", name="grandeur")
+    br
+    br
+    button(type="submit", name="Submit") Calcul!
